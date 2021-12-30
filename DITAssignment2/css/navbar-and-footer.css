@@ -1,0 +1,74 @@
+﻿* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: rgb(250, 250, 250);
+}
+
+/****************************** NAVBAR ******************************/
+nav {
+    position: relative;
+    width: 100%;
+    height: 12vh;
+    padding: 1.5em 4em;
+    background-color: white;
+    box-shadow: 0 2px 12px 4px rgba(255, 255, 255, 0.5);
+    z-index: 2;
+}
+
+#NavList {
+    display: inline-block;
+    height: 100%;
+    float: right;
+}
+
+.NavList__Link {
+    display: inline;
+    padding: 0.6em 0 0 0;
+    height: 100%;
+    float: right;
+    margin: 0 2em 0 4em;
+}
+
+.NavList__Link a {
+    color: rgba(0, 0, 0, 0.9);
+    font-family: Montserrat, sans-serif;
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: -1px;
+    transition: color 0.3s ease-out;
+}
+
+.NavList__Link a:hover {
+    color: red;
+}
+
+.NavList__Link a::after {
+    content: '';
+    width: 0px;
+    height: 2px;
+    display: block;
+    background-color: red;
+    transition: 300ms;
+}
+
+.NavList__Link a:hover::after {
+    width: 100%;
+}
+
+#SiteLogo {
+    height: 100%;
+}
+
+#SiteLogo__Img {
+    height: 100%;
+}

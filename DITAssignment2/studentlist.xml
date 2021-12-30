@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<studentlist>
+	<student>
+		<id>01944422</id>
+		<name>Peter Parker</name>
+		<honours>First class</honours>
+		<book_prize>Yes</book_prize>
+		<programme>Comp. Science</programme>
+	</student>
+	<student>
+		<id>01923455</id>
+		<name>Bryan Adam</name>
+		<honours>Second class</honours>
+		<book_prize>No</book_prize>
+		<programme>Mathematics</programme>
+	</student>
+	<student>
+		<id>01952345</id>
+		<name>Maggie Fong</name>
+		<honours>First class</honours>
+		<book_prize>Yes</book_prize>
+		<programme>Accounting</programme>
+	</student>
+	<student>
+		<id>01998475</id>
+		<name>Melissa Teh</name>
+		<honours>First class</honours>
+		<book_prize>Yes</book_prize>
+		<programme>Finance</programme>
+	</student>
+	<student>
+		<id>01899888</id>
+		<name>Ahmad bin Suhail</name>
+		<honours>Second class</honours>
+		<book_prize>No</book_prize>
+		<programme>Engineering</programme>
+	</student>
+	<student>
+		<id>01900847</id>
+		<name>Lechumanan a/l Vicky</name>
+		<honours>Third class</honours>
+		<book_prize>No</book_prize>
+		<programme>Comp. Science</programme>
+	</student>
+	<student>
+		<id>04503967</id>
+		<name>Soo Tong Wei</name>
+		<honours>Third class</honours>
+		<book_prize>No</book_prize>
+		<programme>Mathematics</programme>
+	</student>
+</studentlist>

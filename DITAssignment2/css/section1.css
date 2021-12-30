@@ -1,0 +1,186 @@
+﻿/****************************** HEADER ******************************/
+#Section1 {
+    height: 32vh;
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3) ), url('/Images/galaxy.jpg');
+    background-attachment: fixed;
+    border-bottom: 3px solid red;
+}
+
+#SearchFormContainer {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    height: 100%;
+    margin: auto;
+    padding: 3.5rem 0;
+}
+
+/*********** HEADER TEXT **********/
+#SearchForm__Text {
+    flex-grow: 1;
+    text-align: left;
+}
+
+#SearchForm__Text h1 {
+    color: white;
+    font-family: Montserrat, sans-serif;
+    font-size: 2.8rem;
+    font-weight: 400;
+    opacity: 98%;
+    letter-spacing: -0.1rem;
+}
+
+#SearchForm__Text h1::after {
+    content: '';
+    width: 10%;
+    height: 2px;
+    display: block;
+    background: red;
+}
+
+#SearchForm__Text p {
+    margin: 1.5em 0 1em 0;
+    color: white;
+    font-family: Roboto, sans-serif;
+    font-weight: 300;
+    opacity: 98%;
+}
+
+/*********** SEARCH FORM **********/
+#SearchForm {
+    display: grid;
+    height: 100%;
+    margin-top: 1em;
+    flex-grow: 1;
+    grid-template-rows: 0fr 1fr 3fr;
+    grid-template-columns: 4fr 1fr;
+    grid-row-gap: 0.4em;
+}
+
+#SearchForm > * {
+    margin: 0 0.3em;
+}
+
+#SearchForm__Settings {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+#SearchForm__Settings__Filter {
+    display: flex;
+    flex-grow: 1;
+}
+
+#SearchForm__Settings label, #SearchForm__Settings p {
+    margin-right: 0.5em;
+    color: white;
+    font-family: Roboto, sans-serif;
+    font-size: 0.9rem;
+    font-weight: 300;
+}
+
+#SearchForm__Settings__Filter input {
+    width: 16px;
+    height: 16px;
+    margin-left: 0.5em;
+}
+
+#SearchForm__Settings__Filter input:hover {
+    cursor: pointer;
+}
+
+#SearchForm__Settings__Filter label {
+    margin-left: 0.3em;
+    font-family: Montserrat, sans-serif;
+    font-weight: 400;
+}
+
+#SearchForm__Settings__Filter label:hover {
+    cursor: pointer;
+    color: #ff6565;
+}
+
+#SearchForm__Settings select {
+    padding: 0.2em;
+    background-color: rgba(255, 255, 255, 0.05);
+    color: white;
+    font-family: Montserrat, sans-serif;
+    font-size: 0.9rem;
+    font-weight: 400;
+    border: 1px solid white;
+}
+
+#SearchForm__Settings select:hover {
+    cursor: pointer;
+    color: #ff6565;
+}
+
+#SearchForm__Settings select:focus {
+    outline: none;
+    border-radius: 0px;
+}
+
+#SearchForm__Settings option {
+    color: black;
+    letter-spacing: -1px;
+}
+
+#SearchBoxDiv {
+    display: flex;
+    height: 60%;
+    border: 1px solid white;
+    border-radius: 2px;
+}
+
+#SearchTextBox {
+    height: 100%;
+    padding: 1em 1.5em;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.2);
+    font-family: Roboto, sans-serif;
+    font-size: 1.2rem;
+    outline: none;
+    border: none;
+    border-radius: 2px 0 0 2px;
+    flex-grow: 4;
+    transition: border 0.3s ease-out;
+}
+
+#SearchTextBox::placeholder {
+    color: rgb(240, 240, 240);
+    font-weight: 300;
+}
+
+#SearchButton {
+    height: 102%;
+    margin-top: -1px;
+    margin-right: -1px;
+    font-family: 'Roboto', sans-serif;
+    border: none;
+    border-radius: 0 1px 1px 0;
+    flex-grow: 1;
+    transition: all 0.2s ease-out;
+}
+
+#SearchButton:hover {
+    cursor: pointer;
+    color: red;
+    background-color: white;
+}
+
+#ResetButton {
+    margin-left: 1em;
+    height: 59%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    border: 0;
+    border-radius: 2px;
+    transition: all 0.2s ease-out;
+}
+
+#ResetButton:hover {
+    cursor: pointer;
+    color: red;
+    background-color: white;
+}

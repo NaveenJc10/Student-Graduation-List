@@ -1,0 +1,114 @@
+﻿/****************************** STUDENTS LIST ******************************/
+#Section2 {
+    padding: 2em 0 4em 0;
+}
+
+#StudentsTable {
+    width: 80%;
+    margin: auto;
+    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+#ColumnsContainer {
+    width: 100%;
+    display: flex;
+    margin: auto;
+    padding: 1em 0;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: #051b3f;
+    color: white;
+}
+
+.StudentContainer {
+    width: 100%;
+    display: flex;
+    margin: auto;
+    padding: 1em 0;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: white;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+}
+
+.StudentContainer:hover {
+    background-color: #c0e4ff;
+}
+
+#ColumnsContainer p, .StudentContainer div {
+    font-family: Roboto, sans-serif;
+}
+
+.TextColumn1, .TextColumn3, .TextColumn4, .TextColumn5 {
+    font-weight: 300;
+    text-align: center;
+}
+
+.TextColumn1 {
+    width: 10%;
+}
+
+#NameColumn {
+    width: 40%;
+    font-weight: 300;
+}
+
+.TextColumn2 {
+    width: 40%;
+    text-align: left;
+    transition: color 0.2s ease-out;
+}
+
+.TextColumn2:hover {
+    cursor: pointer;
+    color: #3e3be6;
+}
+
+.TextColumn2__SmallText {
+    width: 0%;
+    display: inline-block;
+    overflow: hidden;
+    margin-left: 2em;
+    font-size: 0.7rem;
+    vertical-align: middle;
+    white-space: nowrap;
+    transition: width 0.3s linear;
+}
+
+.StudentContainer:hover .TextColumn2__SmallText {
+    width: 30%;
+}
+
+.TextColumn3 {
+    width: 15%;
+}
+
+.TextColumn4 {
+    width: 10%;
+}
+
+.TextColumn5 {
+    width: 25%;
+}
+
+#ErrorMessage {
+    padding: 2em 0 3em 0;
+    text-align: center;
+}
+
+#ErrorMessage h1 {
+    font-family: Montserrat, sans-serif;
+    font-size: 2.2rem;
+    font-weight: 500;
+    color: red;
+    letter-spacing: -1px;
+}
+
+#ErrorMessage p {
+    padding-top: 1em;
+    font-family: Roboto, sans-serif;
+    font-size: 0.9rem;
+}

@@ -1,0 +1,116 @@
+﻿#ModalWindow {
+    position: fixed;
+    z-index: 3;
+    opacity: 0;
+    visibility: hidden;
+    top:0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(15, 15, 15, 0.7);
+    transition: opacity .5s ease-out;
+}
+
+#closeBtn {
+    position: absolute;
+    top: 1em;
+    right: 1em;
+    font-size: 2.5rem;
+    color: black;
+    transition: color 0.2s ease-out;
+}
+
+#closeBtn:hover {
+    color: #a25b5b;
+    cursor: pointer;
+}
+
+#StudentCard {
+    position: relative;
+    display: flex;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: auto;
+    width: 85%;
+    height: 80%;
+    background-color: whitesmoke;
+    padding: 2em 5em;
+    justify-content: center;
+    box-shadow: #222222 0 5px 50px 2px;
+}
+
+#StudentPhoto {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    max-height: 90%;
+    max-width: 40%;
+    min-height: 80%;
+    min-width: 30%;
+    margin-left: 2em;
+    margin-right: 2em;
+    object-fit: cover;
+}
+
+/*Student details container*/
+#StudentDetails {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    padding-left: 2.5em;
+    width: 50%;
+    max-height: 80%;
+    font-family: Roboto, sans-serif;
+    word-wrap: break-word;
+    overflow-y: auto;
+}
+
+/*Student number*/
+#StudentDetails h1 {
+    font-size: 1.5rem;
+}
+
+/*Student name*/
+#StudentDetails h1 {
+    margin-top: .5em;
+    margin-bottom: 1em;
+    font-size: 3rem;
+    background-image: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgb(46, 78, 226) 100%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+#DetailsSubCtn {
+    display: flex;
+    flex-direction: column;
+}
+
+.detailSubCtnItem {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1em;
+}
+
+.detailSubCtnItem img {
+    max-height: 3em;
+    max-width: 3em;
+    margin-right: 1em;
+}
+
+.detailLabelCtn p:nth-child(2){
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+#BookPrizeStatementCtn {
+    position: absolute;
+    display: none;
+    bottom: 0;
+}
+
+#BookPrizeStatementCtn img {
+    max-height: 2.5em;
+    max-width: 2.5em;
+    margin-right: 0.5em;
+    vertical-align: middle;
+}
